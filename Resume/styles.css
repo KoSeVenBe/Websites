@@ -1,0 +1,57 @@
+p, h1 {
+    text-align: center;
+    color: white;
+}
+p {
+    font-size: 20px;
+}
+h1 {
+    font-size: 35px;
+    padding-top: 7%;
+}
+body {
+    background-image: url("https://i.imgur.com/1ht2NUF.png");
+    padding: 20px;
+}
+
+section {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 650px;
+    background-color: black;
+}
+   
+table, th, td {
+    margin: auto;
+    width: 20%;
+    align: center;
+    border: 5px solid gray;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+h1, h2, p, li {
+    font-family: monospace, Times, serif;
+}
+img {
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+}
+
+.favorite {
+    font-size: 15px;
+    padding-right: 30px;
+    float: right
+}
+
+li, ol {
+    color: white;
+    text-align: left;
+    transform: translateX(22px) translateY(0px);
+    
+}
