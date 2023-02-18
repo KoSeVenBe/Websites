@@ -27,5 +27,5 @@ h1 {
   }  
 
   .four {
-    background-color: brown;
+    background: linear-gradient(90deg, white, darkgreen, red);
   }
