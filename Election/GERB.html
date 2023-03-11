@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>You clicked page1</title>
+  <title>ГЕРБ</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <div class="container">
-    <h2>Welcome to page1</h2>
-    <p>Hi</p>
+    <h2>Поздравления! Ти избра ГЕРБ!</h2>
+    <p>А сега какво?</p>
+    <audio id="myAudio">
+      <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    
+    <input type="range" min="0" max="1" step="0.1" value="0.2" oninput="setVolume(this.value)">
+    
+    <script>
+      var audio = document.getElementById("myAudio");
+      
+      function setVolume(volume) {
+        audio.volume = volume;
+      }
+    </script>
+
+    <a href="https://example.com">
+      <img src="korni.jpg" alt="Clickable Image" class="border-image move-down">
+    </a>
+    
+    
+    
   </div>
 </body>
 </html>

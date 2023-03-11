@@ -43,6 +43,11 @@ body {
     background-color: blue;
     color: #fff;
   }
+
+  .PP:hover {
+    background-color: yellow;
+    color: blue;
+  }
   
   /* Change the background color of list items when hovered */
   li:hover {
@@ -66,4 +71,20 @@ body {
   a:hover {
     color: #fff;
   }
+
+  .move-down {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
   
+  .border-image {
+    border: 7px solid #000;
+    transition: border-color 0.5s ease;
+  }
+  
+  .border-image:hover {
+    border-color: #f00;
+  }
