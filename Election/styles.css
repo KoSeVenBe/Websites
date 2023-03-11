@@ -38,6 +38,11 @@ body {
     background-color: #fff;
     margin-right: 10px;
   }
+
+  .GERB:hover {
+    background-color: blue;
+    color: #fff;
+  }
   
   /* Change the background color of list items when hovered */
   li:hover {
