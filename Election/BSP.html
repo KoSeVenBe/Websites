@@ -7,23 +7,31 @@
 <body>
   <div class="container">
     <h2>Поздравления! Ти избра БСП!</h2>
-    <p>А сега какво?</p>
+    <p>Добре дошъл начело на левицата. Времената за БСП са трудни.</p>
+    <p>Първият ти избор е кой да бъде лидерът на БСП.</p>
     
-    <audio controls volume="0.5">
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
-    <p>Избери лидер!</p>
+    <audio id="myAudio" preload="auto">
+      <source src="" type="audio/mpeg">
+    </audio> 
+    <script>
+      var BSP_choice = new Audio('BSP_choice.mp3');
+      function playAudio(url) {
+        BSP_choice.play();
+        setTimeout(function() {
+          window.location.href = url;
+        }, BSP_choice.duration * 1000);
+      }
+    </script>
+    
     <div style="width: 80%; margin: 0 auto;">
-        <a href="korni.html">
-            <img src="korni.jpg" alt="Clickable Image" class="border-image" style="width:300px; height:400px;">
-        </a>
-        <a href="zarkov.html">
-            <img src="zarkov.jpg" alt="Clickable Image" class="border-image" style="width:300px; height:400px;">
-        </a>
+      <a href="#" onclick="playAudio('korni.html');">
+        <img src="korni.jpg" alt="Clickable Image" class="border-image" style="width:300px; height:400px;">
+      </a>
+      
+      <a href="#" onclick="playAudio('zarkov.html');">
+        <img src="zarkov.jpg" alt="Clickable Image" class="border-image" style="width:300px; height:400px;">
+      </a>
     </div>
-    
-    
-    
   </div>
 </body>
 </html>
