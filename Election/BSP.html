@@ -3,17 +3,19 @@
 <head>
   <title>БСП</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="trust.js"></script>
 </head>
 <body>
   <div class="container">
     <h2>Поздравления! Ти избра БСП!</h2>
     <p>Добре дошъл начело на левицата. Времената за БСП са трудни.</p>
     <p>Първият ти избор е кой да бъде лидерът на БСП.</p>
-    
+    <p>Trust: <span id="value"></span></p>
     <audio id="myAudio" preload="auto">
       <source src="" type="audio/mpeg">
     </audio> 
     <script>
+      increaseValue(10)
       var BSP_choice = new Audio('BSP_choice.mp3');
       function playAudio(url) {
         BSP_choice.play();
@@ -24,11 +26,11 @@
     </script>
     
     <div style="width: 80%; margin: 0 auto;">
-      <a href="#" onclick="playAudio('korni.html');">
+      <a href="#" onclick="playAudio('korni.html'); decreaseValue(5)">
         <img src="korni.jpg" alt="Clickable Image" class="border-image" style="width:300px; height:400px;">
       </a>
       
-      <a href="#" onclick="playAudio('zarkov.html');">
+      <a href="#" onclick="playAudio('zarkov.html'); increaseValue(5)">
         <img src="zarkov.jpg" alt="Clickable Image" class="border-image" style="width:300px; height:400px;">
       </a>
     </div>
