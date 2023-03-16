@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://img.freepik.com/free-photo/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall_1258-28312.jpg?w=1800&t=st=1678901459~exp=1678902059~hmac=e02e50a48f4dbfe5574c14e18d1a15346633516845c59732fa0fa13e0e0bad6e);
+    background-image: url(https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
     font-family: sans-serif;
     padding: 20px;
 }
@@ -23,3 +23,20 @@ p {
     text-align: center;
     padding-top: 40px;
 }
+
+.border-image {
+    border: 7px solid rgb(0, 0, 0);
+    transition: border-color 0.5s ease;
+  }
+  
+  .border-image:hover {
+    border-color: #f00;
+  }
+
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+  }
