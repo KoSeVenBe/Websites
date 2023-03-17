@@ -17,12 +17,13 @@ p {
     margin-top: 30px;
 }
 
-.container {
+.container, .container2, .container3 {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 15px;
 }
+
 
 .border-image {
     border: 7px solid rgb(0, 0, 0);
@@ -39,4 +40,37 @@ p {
   
   img:hover {
     transform: scale(1.1);
+  }
+
+  .description {
+    position: absolute;
+    top: 280px;
+    right: 1500px;
+    padding: 10px;
+    background-color: rgba(25, 25, 25, 0.8);
+    z-index: 1;
+    font-size: 16px; /* change font size */
+    color: cyan; /* change text color */
+  }
+
+  .description2 {
+    position: absolute;
+    top: 510px;
+    right: 1500px;
+    padding: 10px;
+    background-color: rgba(25, 25, 25, 0.8);
+    z-index: 1;
+    font-size: 16px; /* change font size */
+    color: cyan; /* change text color */
+  }
+
+  .description3 {
+    position: absolute;
+    top: 750px;
+    right: 1500px;
+    padding: 10px;
+    background-color: rgba(25, 25, 25, 0.8);
+    z-index: 1;
+    font-size: 16px; /* change font size */
+    color: cyan; /* change text color */
   }
