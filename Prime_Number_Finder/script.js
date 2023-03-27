@@ -24,3 +24,33 @@ function checkPrime() {
       }
     }
   }
+
+  function processInput() {
+    let inputString = document.getElementById("inputValues").value;
+    let values_lst = inputString.split(" ").map(Number);
+    let a = values_lst[0];
+    let b = values_lst[1];
+    let c = values_lst[2];
+  
+    if (a > 0 && b > 0 && c > 0) {
+      console.log(`Equation: ${a}x^2 + ${b}x + ${c} = 0`);
+    } else if (b < 0) {
+      console.log(`Equation: ${a}x^2 - ${-b}x + ${c} = 0`);
+    } else if (c < 0) {
+      console.log(`Equation: ${a}x**2 + ${b}x - ${-c} = 0`);
+    }
+  
+    let d = b ** 2 - 4 * a * c;
+    console.log(d);
+  
+    if (d > 0) {
+      let x1 = (-b + Math.sqrt(d)) / (2 * a);
+      let x2 = (-b - Math.sqrt(d)) / (2 * a);
+      alert(x1, x2);
+    } else if (d == 0) {
+      let x1 = -b / (2 * a);
+      alert(x1);
+    } else {
+      console.log("Discriminant is negative");
+    }
+  }
