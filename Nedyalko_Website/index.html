@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Art Showcase</title>
+    <script>
+        function showPopup(imgSrc) {
+            var popup = document.getElementById("popup");
+            var fullImg = document.getElementById("full-img");
+            fullImg.src = imgSrc;
+            popup.style.display = "block";
+        }
+
+        function closePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+
+    </script>
+    <style>
+        /* Add your custom CSS here */
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            border: 5px solid #fff;
+            transition: all 0.5s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            border-color: #00bfff;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .social a {
+            margin: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        /* Add CSS for the navigation menu */
+        nav {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        p, h1 {
+            text-align: center;
+        }
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1;
+        }
+        #full-img {
+            max-width: 90%;
+            max-height: 90%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 74px;
+            margin-right: 2%;
+            margin-top: 2%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Nedyalko Delchev</h1>
+        <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Nedyalko Art</h1>
+    <!-- Add HTML for the full-sized image popup -->
+    <div id="popup">
+        <img id="full-img" src="" alt="">
+        <span id="close" onclick="closePopup()">&times;</span>
+    </div>
+
+    <!-- Add the onclick attribute to the gallery images -->
+    <div class="gallery">
+        <img src="img/image1.jpg" alt="Art 1" width="300" height="300" onclick="showPopup('img/image1.jpg')">
+        <img src="img/image2.bmp" alt="Art 2" width="300" height="300" onclick="showPopup('img/image2.bmp')">
+        <img src="img/image3.jpg" alt="Art 3" width="300" height="300" onclick="showPopup('img/image3.jpg')">
+    </div>
+
+</body>
+</html>
