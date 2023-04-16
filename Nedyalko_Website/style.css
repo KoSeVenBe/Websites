@@ -85,6 +85,12 @@ p, h1 {
     cursor: pointer;
 }
 
-.black-bg {
-    background-color: black;
-}
+footer {
+    background-image: linear-gradient(to bottom, #222, #111);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
