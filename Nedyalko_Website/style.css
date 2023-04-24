@@ -107,4 +107,11 @@ footer {
     border: 2px solid black;
     background-color: #111;
   }
+
+.ned {
+    transition: transform 0.3s ease;
+}
+.ned:hover {
+    transform: scale(1.05);
+  }
   

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Interface</title>
+    <style>
+      /* Style the chat messages */
+      .message-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 10px;
+      }
+      .user-message {
+        background-color: #e9e9e9;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        align-self: flex-start;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+      }
+      .chatbot-message {
+        background-color: #0099ff;
+        border-radius: 20px;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        align-self: flex-end;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        color: #fff;
+      }
+      
+      /* Style the input field */
+      input[type="text"] {
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        width: 80%;
+        margin-right: 10px;
+      }
+      input[type="submit"] {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        background-color: #0099ff;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message-container">
+      <!-- example user message -->
+      <div class="user-message">Hello, how are you?</div>
+      
+      <!-- example chatbot message -->
+      <div class="chatbot-message">I'm doing well, thanks for asking!</div>
+    </div>
+    
+    <!-- input field and submit button -->
+    <form>
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <input type="submit" value="Send">
+    </form>
+    
+    <script>
+      // function to generate random chatbot response
+      function generateChatbotResponse() {
+		  // array of possible chatbot responses
+		  const responses = [
+			"I'm sorry, I didn't understand that.",
+			"That's interesting, can you tell me more?",
+			"I'm not sure what you mean. Could you rephrase that?",
+			"That's a great point.",
+			"I see what you're saying.",
+			"Interesting, tell me more.",
+			"I'm not sure I agree with you.",
+			"Thanks for sharing your thoughts.",
+			"I appreciate your input.",
+			"Let's change the subject. What else would you like to talk about?",
+			"That's a good question. I'll have to think about it.",
+			"I'm glad we're having this conversation.",
+			"That's a common concern. Have you considered other options?",
+			"Interesting perspective. What led you to that conclusion?",
+			"I'm sorry, but I'm not programmed to handle that topic.",
+			"I'm not sure what to say to that. Let me get back to you on that one."
+		  ];
+
+		  // generate a random index from the responses array
+		  const randomIndex = Math.floor(Math.random() * responses.length);
+
+		  // return the randomly selected response
+		  return responses[randomIndex];
+	}
+	</script>
+	</body>
+</html>
+
