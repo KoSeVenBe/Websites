@@ -1,8 +1,38 @@
-p, h1 {
-	text-align: center;
-	color: white 
+body {
+	background: linear-gradient(173deg, rgba(2,0,36,1) 0%, rgba(63,63,121,1) 100%, rgba(0,212,255,1) 100%); 
 }
 
-body {
-	background-color: #030331
+html, body {
+	height: 100%;
+	margin: 0;
+  	padding: 0;
+
+}
+
+p, h1 {
+	text-align: center;
+	color: white;
+}
+
+p {
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.main {
+	opacity: 0; /* hide the element initially */
+  	transform: translateY(100px); /* move the element down */
+  	transition: opacity 1s, transform 0s; /* add a transition for opacity and transform properties */
+  	overflow: hidden; /* hide any overflow content */
+}
+
+.main.show {
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	opacity: 1; /* show the element */
 }
