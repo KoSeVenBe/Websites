@@ -19,14 +19,18 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+    transition: transform 0.2s ease-in-out; /* add a transition effect for a smoother animation */
+  	font-size: 60px;
+}
+
+h1:hover {
+	transform: scale(1.3);
 }
 
 .main {
 	opacity: 0; /* hide the element initially */
   	transform: translateY(100px); /* move the element down */
   	transition: opacity 1s, transform 0s; /* add a transition for opacity and transform properties */
-  	overflow: hidden; /* hide any overflow content */
 }
 
 .main.show {
